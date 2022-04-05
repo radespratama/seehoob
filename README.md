@@ -12,25 +12,26 @@ git clone https://github.com/radespratama/seehoob.git
 cd seehoob
 
 # Install deps
-yarn
+yarn || npm install
 ```
+
 
 ## Starting server
 
 ```bash
-yarn dev
+yarn dev || npm run dev
 ```
 
-Server should now be running on [localhost](https://localhost:3022)
+Server should now be running on [localhost:3022](https://localhost:3022)
 
 # 🔧 Tools Used
 
- - [TypeScript](https://www.typescriptlang.org/)
- - [Next.js](https://nextjs.org/)
- - [Stitches](https://stitches.dev/)
- - [Prettier](https://prettier.io/)
- - [ESLint](https://eslint.org/)
- - [Figma](https://www.figma.com/)
+![Typescript](https://img.shields.io/badge/Typescript-355DAB?style=for-the-badge&logo=Typescript&logoColor=white)
+![NextJs](https://img.shields.io/badge/NextJs-1F2937?style=for-the-badge&logo=next.js&logoColor=white)
+![Stitches](https://img.shields.io/badge/Stitches-FFA451?style=for-the-badge&logo=&logoColor=white)
+![Eslint](https://img.shields.io/badge/Eslint-352DAC?style=for-the-badge&logo=Eslint&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-1F2937?style=for-the-badge&logo=Figma&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-FB542B?style=for-the-badge&logo=Prettier&logoColor=white)
 
 # 🤞 Contributing
 
