@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .searchBar {
+    @apply bg-gray-800 absolute z-[3] outline-none border-none px-5 py-4 rounded-md
+    text-center text-white w-[50vw] max-w-[500px] 
+    min-w-[300px] text-lg;
+  }
+  .border-search {
+    @apply border-[3px] hidden lg:inline relative z-[1] left-[10px] top-5 border-separate p-6 rounded-md
+    w-[50vw] max-w-[500px] min-w-[300px];
+  }
+}
