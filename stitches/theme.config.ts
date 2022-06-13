@@ -1,14 +1,10 @@
 import { createCss } from '@stitches/react'
 
-import { ForestGreen, White } from 'kraftuur'
-
 export const { css, styled, global, getCssString, keyframes } = createCss({
   theme: {
     colors: {
-      main: '#61C3B',
+      main: '#FFF',
       dark: '#2A2A39',
-      ...White,
-      ...ForestGreen,
     },
     fontSizes: {
       1: '14px',

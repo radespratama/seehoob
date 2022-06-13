@@ -1,19 +1,20 @@
-import React from 'react'
-import Head from '@components/Head'
+import React from "react"
+import Head from "@components/Head"
 
-import Searchbar from '@components/Searchbar'
-import Main from '@components/User/MainInfo'
-import Repos from '@components/User/Repos'
+import Searchbar from "@components/Searchbar"
+import Main from "@components/User/MainInfo"
+import Repos from "@components/User/Repos"
 
-import Footer from '@components/Footer'
+import Footer from "@components/Footer"
 
-import { styled } from '@css/theme.config'
-import global from '@css/global.style'
+import { styled } from "@css/theme.config"
+import global from "@css/global.style"
+import Reloading from "@components/Reloading"
 
-const MainContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+const MainContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 })
 
 interface repo {
@@ -42,18 +43,18 @@ interface Data {
 }
 
 const Home = () => {
-  const [name, setName] = React.useState(' ')
-  const [bio, setBio] = React.useState(' ')
-  const [avatar, setAvatar] = React.useState(' ')
-  const [url, setUrl] = React.useState(' ')
+  const [name, setName] = React.useState(" ")
+  const [bio, setBio] = React.useState(" ")
+  const [avatar, setAvatar] = React.useState(" ")
+  const [url, setUrl] = React.useState(" ")
 
-  const [blog, setBlog] = React.useState(' ')
-  const [twitter, setTwitter] = React.useState(' ')
+  const [blog, setBlog] = React.useState(" ")
+  const [twitter, setTwitter] = React.useState(" ")
 
   const [topRepos, setTopRepos] = React.useState([])
 
-  const [userInput, setUserInput] = React.useState(' ')
-  const [error, setError] = React.useState(' ')
+  const [userInput, setUserInput] = React.useState(" ")
+  const [error, setError] = React.useState(" ")
 
   const [firstTime, setFirstTime] = React.useState(true)
 
@@ -91,7 +92,7 @@ const Home = () => {
             .slice(0, 20)
 
           setTopRepos(mostStarred)
-          setError('')
+          setError("")
           setFirstTime(false)
         }
       })
@@ -102,7 +103,7 @@ const Home = () => {
         if (data.message) setError(data.message)
         else {
           setData(data)
-          setError('')
+          setError("")
           setFirstTime(false)
         }
       })
@@ -123,12 +124,13 @@ const Home = () => {
           handleSearchFunction={handleSearch}
         />
       ) : (
-        ''
+        ""
       )}
       {error || firstTime ? (
-        ''
+        ""
       ) : (
         <>
+          <Reloading />
           <Main
             avatar={avatar}
             name={name}
