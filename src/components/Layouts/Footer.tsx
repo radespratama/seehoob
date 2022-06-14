@@ -15,7 +15,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="container mx-auto border-t border-gray-800 py-3 px-2">
+    <footer className="container mx-auto border-t border-gray-700 py-3 px-2">
       <section className="flex flex-col space-y-2 md:space-y-0 md:flex-row items-center justify-between">
         <div className="flex items-center">
           <h5 className="tracking-tight">
@@ -37,12 +37,14 @@ export default function Footer() {
           ))}
           <h5 className="tracking-tight">
             Build using{" "}
-            <Link
-              href="https://nextjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <a className="hover:underline">Next JS</a>
+            <Link href="https://nextjs.org/" passHref>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                className="hover:underline"
+              >
+                Next JS
+              </a>
             </Link>
           </h5>
         </div>
