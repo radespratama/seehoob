@@ -11,7 +11,7 @@ export default function Intro({
   handleSubmitFunction,
 }: SearchbarIntroProps) {
   return (
-    <article className="flex flex-col items-center min-h-screen justify-center">
+    <article className="flex flex-col items-center min-h-[80vh] md:min-h-screen justify-center">
       <h1 className="text-5xl lg:text-6xl font-bold tracking-tighter text-center">
         Seehoob
       </h1>

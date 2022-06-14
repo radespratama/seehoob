@@ -39,7 +39,7 @@ export default function Layout({ title, children }: LayoutProps) {
           content="https://github.com/radespratama/Seehoob/blob/main/public/Banner.png?raw=true"
         />
       </Head>
-      <main className="flex-wrap flex-grow px-2 min-h-screen">{children}</main>
+      <main className="flex-wrap flex-grow px-[6px] min-h-screen">{children}</main>
       <Footer />
     </>
   );
