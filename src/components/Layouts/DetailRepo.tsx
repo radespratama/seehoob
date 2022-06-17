@@ -42,7 +42,7 @@ export default function DetailRepo({
               {bio || "Bio"}
             </p>
             <div className="flex items-center space-x-3 tracking-tight">
-              <Link href={accountUrl} passHref>
+              <Link href={accountUrl || "https://github.com"} passHref>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"

@@ -42,10 +42,10 @@ const RepoCard: React.FC<{ topRepos: repo[] }> = ({ topRepos }) => {
 
             <div className="card-body">
               <h3 className="text-3xl tracking-tight font-bold mt-4 mb-2">
-                {repo?.name}
+                {repo?.name || "-- NO TITLE --"}
               </h3>
               <p className="text-sm font-medium text-gray-600 text-left leading-6">
-                {repo?.description}
+                {repo?.description || "-- NO DESCRIPTION --"}
               </p>
             </div>
 
